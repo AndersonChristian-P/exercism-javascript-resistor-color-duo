@@ -11,4 +11,4 @@ export const colors = [
   'white'
 ]
 
-export const value = colorNumbers => parseInt(colorNumbers.map(colorNumber => colors.indexOf(colorNumber)).join(""))
+export const value = colorNumbers => Number(colorNumbers.map(colorNumber => colors.indexOf(colorNumber)).join(""))
