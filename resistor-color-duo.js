@@ -1,8 +1,14 @@
-//
-// This is only a SKELETON file for the 'Resistor Color Duo' exercise. It's been provided as a
-// convenience to get you started writing code faster.
-//
+export const colors = [
+  'black',
+  'brown',
+  'red',
+  'orange',
+  'yellow',
+  'green',
+  'blue',
+  'violet',
+  'grey',
+  'white'
+]
 
-export const value = () => {
-  throw new Error("Remove this statement and implement this function");
-};
+export const value = colorNumbers => parseInt(colorNumbers.map(colorNumber => colors.indexOf(colorNumber)).join(""))
